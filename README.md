@@ -7,11 +7,7 @@
 
 Screenshot
 
-<<<<<<< HEAD
 ![project 11 screenshot](./screenshots/project%2011%20full.png)
-=======
-![project 11 screenshot](./screenshots/desktop.png)
->>>>>>> 67799f430651d80b43657e114b003afb99509370
 
 ## What I learned from this Project? 
 
@@ -20,11 +16,7 @@ Screenshot
 - Developed an understanding of CSS variables and their uses with colors and gradient values.
 - Learned how to design fancy pricing cards.
 ## Time taken to finish this project ⏳
-<<<<<<< HEAD
 - 08 hours
-=======
-- 4.5 hours
->>>>>>> 67799f430651d80b43657e114b003afb99509370
 ---
 ![HTML CSS](https://img.shields.io/badge/HTML-CSS-orange)
 ![author](https://img.shields.io/badge/By-Arpit--Pathak-blue)
