@@ -20,7 +20,7 @@ body {
 
 /* ****************** navbar ******************  */
 .navbar {
-    width: 85vw;
+    width: 90vw;
     margin: 0 auto;
     display: flex;
     height: 15vh;
@@ -123,8 +123,15 @@ body {
     align-items: flex-start;
 }
 
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
 .img img {
-    width: 600px;
+    width: 100%;
 }
 
 /* reademore button  */
@@ -179,14 +186,12 @@ body {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly;
-
+    gap: 2rem;
 }
 
 .services-card {
-    width: 28%;
+    width: 350px;
     height: 250px;
-    margin: 20px 0;
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -222,15 +227,16 @@ body {
 /* pricing cards  */
 .pricing-cards {
     display: flex;
-    width: 85vw;
+    flex-wrap: wrap;
+    width: 90vw;
     margin: 0 auto;
     justify-content: space-evenly;
+    gap: 2rem;
 }
 
 .pricing-card {
     background-color: #fff;
-    width: 31%;
-    height: 680px;
+    width: 350px;
     border-radius: 15px;
 }
 
@@ -292,6 +298,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding-bottom: 1rem;
 }
 
 .price {
@@ -341,7 +348,6 @@ body {
 
 .testimonial-card {
     width: 48%;
-    height: 260px;
     border: 2px solid rgb(180, 179, 179);
     margin: 10px 0;
     padding: 20px;
@@ -351,7 +357,6 @@ body {
     gap: 1rem;
     border-radius: 5px;
     background-color: transparent;
-
 }
 
 .active-card {
@@ -393,11 +398,11 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 350px;
+    padding: 2rem;
 }
 
 .about-left {
-    width: 45%;
+    width: 55%;
     color: #fff;
 }
 
@@ -445,4 +450,156 @@ footer {
 .footer-item {
     font-size: 14px;
     margin: 10px 0px;
+}
+
+
+/* media queries  */
+
+@media screen and (max-width: 1200px) {
+    .heading {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:1050px) {
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .logo {
+        flex: unset;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .section {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    .section-1 .heading,
+    .section-1 .text,
+    .section-2 .text,
+    .section-3 .text {
+        padding-right: 0;
+    }
+
+    .section-2 {
+        flex-direction: column-reverse;
+    }
+
+    .content,
+    .img {
+        width: 100%;
+    }
+
+    .img img {
+        width: 80%;
+    }
+
+    .text {
+        margin: 1rem 0;
+    }
+
+    /* services  */
+    .services-section {
+        width: 90vw;
+    }
+
+    .section-4 {
+        flex-direction: column;
+        width: 90vw;
+
+    }
+
+    .heading-services,
+    .section-4 .text {
+        width: 100%;
+    }
+
+    /* testimonial section  */
+    .testimonial {
+        width: 90vw;
+    }
+
+    .testimonial-header p {
+        padding: 20px 30px;
+    }
+
+    .testimonial-cards {
+        gap: 1rem;
+    }
+
+    .testimonial-card {
+        width: 430px;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-left {
+        width: 100%;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+    .footer-left p {
+        display: none;
+    }
+
+    .footer-left {
+        width: unset;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .navbar {
+        height: unset;
+        margin-top: 1rem;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .img img {
+        width: 100%;
+    }
+
+    .content button {
+        align-self: center;
+    }
+
+    .nav-btn {
+        padding: 10px 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .footer-logo {
+        margin-bottom: 0;
+    }
+
+    .footer-section {
+        display: none;
+    }
 }
